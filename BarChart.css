@@ -3,4 +3,6 @@ display: inline-block;
 width: 20px;
 height: 75px; /* We'll override height later */
 background-color: teal;
+/*Margin will add the spacing for you*/
+margin-right:2px;
 }
