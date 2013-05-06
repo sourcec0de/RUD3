@@ -15,7 +15,16 @@ function barChart(data){
 	// value of the paragraph elements
 	.text(function(d){return "Strings with dynamic numbers "+d;})
 	// Here we can set a style on each elm
-	.style("color","red");
+	// we can use a callBack as the second arg here
+	// pass it the data value and use it to set styles
+	// conditionally
+	.style("color",function(d) {
+		if (d > 15) {
+			return "red";
+		} else {
+			return "black";
+		}
+	});
 }
 function makeChart(){
 	var data = [ 5, 10, 15, 20, 25 ];
