@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body onload="makeChart()" id="body">
+
+<!-- Load JS files near the last body tag.
+DOM is not Async. So in the head tag you will not render the DOM until it has download JS
+dependencies. Save this until the HTML has loaded, and it will finish loading JS after the other req's -->
+
+<!-- Also, just a note for the web it will increase page speed loading the JS from a CDN like Cloud Flare cndjs -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.0.8/d3.min.js"></script>
+<script type="text/javascript" src="BarChart.js"></script>
+</body>
+</html>
