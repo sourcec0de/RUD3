@@ -15,7 +15,7 @@ function barChart(opts){
 	// 	}
 	// }
 
-	// Here we will set conditional defaints
+	// Here we will set conditional defaults
 	// if opts.svgHeight is not provided it will return undefined
 	// and will default to the OR value
 	var svgWidth = opts.svgWidth || 500
